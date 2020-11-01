@@ -114,13 +114,3 @@ app.get("/database", (req, res) => {
 app.listen(80, () => {
 	console.log("Listening");
 });
-
-// TODO: add proper error handling for this to get called
-db.close((err) => {
-	if (err) {
-		console.log("Error closing database");
-	}
-	else {
-		console.log("Closed database");
-	}
-});
