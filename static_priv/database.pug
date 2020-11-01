@@ -1,0 +1,20 @@
+extends _bootstrap
+
+block head
+	title= "Database dump"
+
+block body
+	div.container
+		table.table
+			thead
+				tr
+					th(scope="col") #
+					th(scope="col") Hash
+					th(scope="col") URL
+			tbody
+				each row, index in rows
+					tr 
+						th(scope="row")= index
+						each val in row
+							td= val
+						

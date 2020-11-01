@@ -1,0 +1,24 @@
+extends _bootstrap
+
+block head
+	title= "URL Shortener"
+	
+block body
+	div.container-fluid
+		nav.navbar.navbar-light.bg-light.navbar-expand-lg
+			div.container
+				a.navbar-brand(href="/") URL Shortener
+		div.container.my-3
+			form.form-inline(action='/generate', method='post')
+				.form-group.mx-sm-3.mb-3
+					input.form-control(type='text', name='url', value='https://')
+				button.btn.btn-info.mb-2(type='submit') Compress!
+			if suburl
+				div.alert.alert-info(role="alert")#dom_alert 
+			if error_alert
+				div.alert.alert-danger(role="alert") !{error_alert}
+
+block scripts
+	if suburl
+		script.
+			$("#dom_alert").text(window.location.origin + "/c/!{suburl}");
