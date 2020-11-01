@@ -6,3 +6,9 @@
 * Express as a webserver
 * Adler32 hashing algorithm for generating short URLs
 * Sqlite3 for storing shortened URLs
+
+## Success example
+![success](https://raw.githubusercontent.com/ThomasSelvig/url_shortener/main/demo.png)
+
+## Invalid URL example
+![fail](https://raw.githubusercontent.com/ThomasSelvig/url_shortener/main/demo2.png)
