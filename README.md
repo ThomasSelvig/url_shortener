@@ -10,5 +10,8 @@
 ## Success example
 ![success](https://raw.githubusercontent.com/ThomasSelvig/url_shortener/main/demo.png)
 
+## Database dump endpoint (purely for debugging purposes)
+![database](https://raw.githubusercontent.com/ThomasSelvig/url_shortener/main/demo3.png)
+
 ## Invalid URL example
 ![fail](https://raw.githubusercontent.com/ThomasSelvig/url_shortener/main/demo2.png)
